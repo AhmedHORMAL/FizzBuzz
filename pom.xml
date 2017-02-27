@@ -4,6 +4,10 @@
  <artifactId>kata</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <description>kata FizzBuzz</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
   <build>
     <plugins>
       <plugin>
@@ -13,6 +17,19 @@
       <configuration>
           <repoToken>WqSnygUbqD5r8YFEes39AkbgRoOdqugj8</repoToken>
       </configuration>
+      </plugin>
+      <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.7.6.201602180812</version>
+          <executions>
+              <execution>
+                  <id>prepare-agent</id>
+                  <goals>
+                      <goal>prepare-agent</goal>
+                  </goals>
+              </execution>
+          </executions>
       </plugin>
     </plugins>
   </build>
