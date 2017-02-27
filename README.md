@@ -1,2 +1,2 @@
-[![Build Status](https://travis-ci.org/AhmedHORMAL/FizzBuzz.svg?branch=master)](https://travis-ci.org/AhmedHORMAL/FizzBuzz)
 # FizzBuzz
+[![Build Status](https://travis-ci.org/AhmedHORMAL/FizzBuzz.svg?branch=master)](https://travis-ci.org/AhmedHORMAL/FizzBuzz) [![Coverage Status](https://coveralls.io/repos/github/AhmedHORMAL/FizzBuzz/badge.svg?branch=master)](https://coveralls.io/github/AhmedHORMAL/FizzBuzz?branch=master)
