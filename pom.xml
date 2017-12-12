@@ -7,29 +7,31 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <junit.version>4.12</junit.version>
+    <assertj.version>3.6.2</assertj.version>
   </properties>
   <build>
     <plugins>
       <plugin>
-      <groupId>org.eluder.coveralls</groupId>
-      <artifactId>coveralls-maven-plugin</artifactId>
-      <version>4.3.0</version>
-      <configuration>
-          <repoToken>WqSnygUbqD5r8YFEes39AkbgRoOdqugj8</repoToken>
-      </configuration>
+      	<groupId>org.eluder.coveralls</groupId>
+      	<artifactId>coveralls-maven-plugin</artifactId>
+      	<version>4.3.0</version>
+      	<configuration>
+          	<repoToken>WqSnygUbqD5r8YFEes39AkbgRoOdqugj8</repoToken>
+      	</configuration>
       </plugin>
       <plugin>
-          <groupId>org.jacoco</groupId>
-          <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.7.6.201602180812</version>
-          <executions>
-              <execution>
-                  <id>prepare-agent</id>
-                  <goals>
-                      <goal>prepare-agent</goal>
-                  </goals>
-              </execution>
-          </executions>
+      	<groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.7.6.201602180812</version>
+        <executions>
+        	<execution>
+        		<id>prepare-agent</id>
+        		<goals>
+        			<goal>prepare-agent</goal>
+        		</goals>
+        	</execution>
+         </executions>
       </plugin>
     </plugins>
   </build>
@@ -37,12 +39,12 @@
   	<dependency>
       	<groupId>junit</groupId>
       	<artifactId>junit</artifactId>
-      	<version>4.12</version>
+      	<version>${junit.version}</version>
   	</dependency>
   	<dependency>
       	<groupId>org.assertj</groupId>
       	<artifactId>assertj-core</artifactId>
-      	<version>3.6.2</version>
+      	<version>${assertj.version}</version>
   	</dependency>
   </dependencies>
 </project>
