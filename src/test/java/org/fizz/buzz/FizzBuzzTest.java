@@ -32,5 +32,11 @@ public class FizzBuzzTest {
 		
 	}
 	
+	@Test
+	public void shouldReturnFizzBuzz2() throws Exception {
+		Assertions.assertThat(fizzbuzz.getResult(15)).isEqualTo(FIZZ+BUZZ);
+		
+	}
+	
 
 }
